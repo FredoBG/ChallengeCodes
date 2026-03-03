@@ -4,7 +4,9 @@ package org.example;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        ListNode list3 = new ListNode();
-        System.out.println(list3.next);
+        Anagram anagram = new Anagram();
+        System.out.println(anagram.isAnagram("anagram", "nagaram"));
+        //ListNode list3 = new ListNode();
+        //System.out.println(list3.next);
     }
 }
