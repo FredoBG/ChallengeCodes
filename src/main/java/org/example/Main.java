@@ -7,14 +7,17 @@ import org.example.util.ListNode;
 public class Main {
     public static void main(String[] args) {
 
-        MergeTwoSortedLists mergeTwoSortedLists = new MergeTwoSortedLists();
-        ListNode list1 = new ListNode(1);
-        list1.next = new ListNode(2);
-        list1.next.next = new ListNode(4, null);
-        ListNode list2 = new ListNode(1);
-        list2.next = new ListNode(3);
-        list2.next.next = new ListNode(4, null);
-        mergeTwoSortedLists.merge(list1, list2);
+        EmployeeStreams employeeStreams = new EmployeeStreams();
+        employeeStreams.StreamExamples();
+
+        //MergeTwoSortedLists mergeTwoSortedLists = new MergeTwoSortedLists();
+        //ListNode list1 = new ListNode(1);
+        //list1.next = new ListNode(2);
+        //list1.next.next = new ListNode(4, null);
+        //ListNode list2 = new ListNode(1);
+        //list2.next = new ListNode(3);
+        //list2.next.next = new ListNode(4, null);
+        //mergeTwoSortedLists.merge(list1, list2);
 
         //MergeTwoOrderedArraysInArray1 mergeTwoOrderedArraysInArray1 = new MergeTwoOrderedArraysInArray1();
         //mergeTwoOrderedArraysInArray1.merge(
