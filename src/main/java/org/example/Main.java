@@ -5,11 +5,18 @@ package org.example;
 public class Main {
     public static void main(String[] args) {
 
-        AnagramArrays anagramArrays = new AnagramArrays();
-        System.out.println(
-                "Are Anagram NumberArrays? " +
-                anagramArrays.areAnagrams(new int[]{1,2,3,4,4,5}, new int[]{4,5,2,3,4,1})
-        );
+        PrimeNums primeNums = new PrimeNums();
+        System.out.println("Is Prime: " + primeNums.isPrime(5));
+        System.out.println("First N Prime Numbers: " + primeNums.getFirstNPrimes(8));
+
+        //Fibonacci fibonacci = new Fibonacci();
+        //System.out.println("First N Fibonacci items: "+fibonacci.firstFibN(8));
+
+        //AnagramArrays anagramArrays = new AnagramArrays();
+        //System.out.println(
+        //        "Are Anagram NumberArrays? " +
+        //        anagramArrays.areAnagrams(new int[]{1,2,3,4,4,5}, new int[]{4,5,2,3,4,1})
+        //);
 
         //SortTwoOrderedArrIn3rdArr sortTwoOrderedArrIn3rdArr = new SortTwoOrderedArrIn3rdArr();
         //sortTwoOrderedArrIn3rdArr.sort(new int[]{1,3,5}, new int[]{2,4,6});
