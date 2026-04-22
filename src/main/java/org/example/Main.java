@@ -5,8 +5,11 @@ package org.example;
 public class Main {
     public static void main(String[] args) {
 
-        Palindrome palindrome = new Palindrome();
-        System.out.println("Is Palindrome: " + palindrome.isPalindrome("Radar"));
+        SortTwoOrderedArrIn3rdArr sortTwoOrderedArrIn3rdArr = new SortTwoOrderedArrIn3rdArr();
+        sortTwoOrderedArrIn3rdArr.sort(new int[]{1,3,5}, new int[]{2,4,6});
+
+        //Palindrome palindrome = new Palindrome();
+        //System.out.println("Is Palindrome: " + palindrome.isPalindrome("Radar"));
 
         //int[] nums = {3, 2, 1, 0, 4}; //{2,3,0,1,4};
         //MinNumJumpsReachIndexNMinus1 minNumJumpsReachIndexNMinus1 = new MinNumJumpsReachIndexNMinus1();
