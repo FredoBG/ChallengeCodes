@@ -5,8 +5,14 @@ package org.example;
 public class Main {
     public static void main(String[] args) {
 
-        SortTwoOrderedArrIn3rdArr sortTwoOrderedArrIn3rdArr = new SortTwoOrderedArrIn3rdArr();
-        sortTwoOrderedArrIn3rdArr.sort(new int[]{1,3,5}, new int[]{2,4,6});
+        AnagramArrays anagramArrays = new AnagramArrays();
+        System.out.println(
+                "Are Anagram NumberArrays? " +
+                anagramArrays.areAnagrams(new int[]{1,2,3,4,4,5}, new int[]{4,5,2,3,4,1})
+        );
+
+        //SortTwoOrderedArrIn3rdArr sortTwoOrderedArrIn3rdArr = new SortTwoOrderedArrIn3rdArr();
+        //sortTwoOrderedArrIn3rdArr.sort(new int[]{1,3,5}, new int[]{2,4,6});
 
         //Palindrome palindrome = new Palindrome();
         //System.out.println("Is Palindrome: " + palindrome.isPalindrome("Radar"));
