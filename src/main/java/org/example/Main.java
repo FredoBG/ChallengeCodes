@@ -1,14 +1,19 @@
 package org.example;
 
-import org.example.util.ListNode;
-
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
 
-        EmployeeStreams employeeStreams = new EmployeeStreams();
-        employeeStreams.StreamExamples();
+        Palindrome palindrome = new Palindrome();
+        System.out.println("Is Palindrome: " + palindrome.isPalindrome("Radar"));
+
+        //int[] nums = {3, 2, 1, 0, 4}; //{2,3,0,1,4};
+        //MinNumJumpsReachIndexNMinus1 minNumJumpsReachIndexNMinus1 = new MinNumJumpsReachIndexNMinus1();
+        //minNumJumpsReachIndexNMinus1.jump(nums);
+
+        //EmployeeStreams employeeStreams = new EmployeeStreams();
+        //employeeStreams.StreamExamples();
 
         //MergeTwoSortedLists mergeTwoSortedLists = new MergeTwoSortedLists();
         //ListNode list1 = new ListNode(1);

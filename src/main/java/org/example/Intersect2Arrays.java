@@ -7,6 +7,10 @@ import java.util.Map;
 
 public class Intersect2Arrays {
     public int[] intersect(int[] nums1, int[] nums2) {
+
+        if (nums1.length > nums2.length)
+            return intersect(nums2, nums1);
+
         Map<Integer, Integer> cntNums1 = new HashMap<Integer, Integer>();
         List<Integer> inters = new ArrayList<>();
 
