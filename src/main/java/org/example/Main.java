@@ -5,6 +5,15 @@ package org.example;
 public class Main {
     public static void main(String[] args) {
 
+        ReverseMatrix reverseMatrix = new ReverseMatrix();
+        int[][] mtrx = new int[][]{
+            {1,2,3},
+            {4,5,6},
+            {7,8,9}
+        };
+        reverseMatrix.reverseInitToEnd(mtrx);
+        reverseMatrix.reverseRowsCols(mtrx);
+
         //PrimeNums primeNums = new PrimeNums();
         //System.out.println("Is Prime: " + primeNums.isPrime(5));
         //System.out.println("First N Prime Numbers: " + primeNums.getFirstNPrimes(10));
@@ -21,20 +30,20 @@ public class Main {
         //SortTwoOrderedArrIn3rdArr sortTwoOrderedArrIn3rdArr = new SortTwoOrderedArrIn3rdArr();
         //sortTwoOrderedArrIn3rdArr.sort(new int[]{1,3,5}, new int[]{2,4,6});
 
-        Palindrome palindrome = new Palindrome();
-        //System.out.println("Is Palindrome: " + palindrome.isPalindrome("Radar"));
-        String[] tests = {
-                "1234",
-                "12321",
-                "9912321456",
-                "9912333321456",
-                "12145445499",
-                "1223213",
-                "abb"
-        };
-        for (String test : tests) {
-            System.out.println(test + " -> " + palindrome.longestPalindrome(test));
-        }
+        //Palindrome palindrome = new Palindrome();
+        ////System.out.println("Is Palindrome: " + palindrome.isPalindrome("Radar"));
+        //String[] tests = {
+        //        "1234",
+        //        "12321",
+        //        "9912321456",
+        //        "9912333321456",
+        //        "12145445499",
+        //        "1223213",
+        //        "abb"
+        //};
+        //for (String test : tests) {
+        //    System.out.println(test + " -> " + palindrome.longestPalindrome(test));
+        //}
 
         //int[] nums = {3, 2, 1, 0, 4}; //{2,3,0,1,4};
         //MinNumJumpsReachIndexNMinus1 minNumJumpsReachIndexNMinus1 = new MinNumJumpsReachIndexNMinus1();
