@@ -1,19 +1,31 @@
 package org.example;
 
 public class Palindrome {
+
+    public String longestPalindromeBruteForce(String s) {
+        String best = "";
+        for (int ini = 0; ini < s.length(); ini++){
+            for (int end = ini; end < s.length(); end++){
+                String evalStr = s.substring(ini,end+1);
+                if (isPalindrome(evalStr) && evalStr.length()>best.length())
+                    best = evalStr;
+            }
+        }
+        return best;
+    }
+
     public boolean isPalindrome(String str) {
-        System.out.println("Analize: " + str);
+        //System.out.println("Analize: " + str);
         char arr[] = str.toLowerCase().toCharArray();
         int l=0, r=str.length()-1;
         while (l<r) {
-            if (arr[l] != arr[r])
+            if (arr[l++] != arr[r--])
                 return false;
-            l++; r--;
         }
         return true;
     }
 
-    public String longestPalindrome(String s) {
+    public String longestPalindromeExpCenter(String s) {
         if (s == null || s.length() < 1) return "";
 
         int start = 0, end = 0;
@@ -26,7 +38,7 @@ public class Palindrome {
 
             int len = Math.max(len1, len2);
 
-            if (len > (end - start + 1)) {
+            if (len > (end - start)) {
                 start = i - (len - 1) / 2;
                 end = i + len / 2;
             }
