@@ -41,7 +41,8 @@ public class Main {
                 "9912333321456",
                 "12145445499",
                 "1223213",
-                "abb"
+                "abb",
+                "forgeeksskeegfor"
         };
         for (String test : tests) {
             System.out.println(test + " -> " + palindrome.longestPalindromeExpCenter(test));
